@@ -1,0 +1,41 @@
+/*
+Error: Invalid CSS after "...ort 'libs/vars'": expected "{", was ";"
+        on line 5 of main.scss
+
+1: ---
+2: # Only the main Sass file needs front matter (the dashes are enough)
+3: ---
+4: 
+5: @import 'libs/vars';
+6: @import 'libs/functions';
+7: @import 'libs/mixins';
+8: @import 'font-awesome.min.css';
+9: /* @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic'); *\/
+10: 
+
+Backtrace:
+main.scss:5
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ort 'libs/vars'\": expected \"{\", was \";\"\A         on line 5 of main.scss\A \A 1: ---\A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: \A 5: @import 'libs/vars';\A 6: @import 'libs/functions';\A 7: @import 'libs/mixins';\A 8: @import 'font-awesome.min.css';\A 9: /* @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic'); */\A 10: "; }
