@@ -11,7 +11,7 @@ Error: Invalid CSS after "@import 'vars'": expected "{", was ";"
 7: @import 'functions';
 8: @import 'mixins';
 9: @import '/font-awesome.min.css';
-10: /* @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic'); *\/
+10: 
 11: 
 
 Backtrace:
@@ -39,4 +39,4 @@ src/_sass/main.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"@import 'vars'\": expected \"{\", was \";\"\A         on line 6 of src/_sass/main.scss\A \A 1: ---\A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: \A 5: \A 6: @import 'vars';\A 7: @import 'functions';\A 8: @import 'mixins';\A 9: @import '/font-awesome.min.css';\A 10: /* @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic'); */\A 11: "; }
+  content: "Error: Invalid CSS after \"@import 'vars'\": expected \"{\", was \";\"\A         on line 6 of src/_sass/main.scss\A \A 1: ---\A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: \A 5: \A 6: @import 'vars';\A 7: @import 'functions';\A 8: @import 'mixins';\A 9: @import '/font-awesome.min.css';\A 10: \A 11: "; }
